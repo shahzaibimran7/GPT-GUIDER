@@ -39,11 +39,11 @@ const Navbar = () => {
             About Us
           </a>
         </div>
-        <div className="flex gap-8">
-          <button className="py-3 px-8 border border-[#00B6BD] rounded-[50px] text-white font-poppins font-medium text-base leading-6">
+        <div className="flex xl:gap-8 lg:gap-6">
+          <button className="py-[14px] px-8 border border-[#00B6BD] rounded-[50px] text-white font-poppins font-medium text-base leading-6">
             Sign in
           </button>
-          <button className="py-3 px-8 border bg-Green-gradient border-[#07091E] rounded-[50px] text-white font-poppins font-medium text-base leading-6">
+          <button className="py-[14px] px-8 border bg-Green-gradient border-[#07091E] rounded-[50px] text-white font-poppins font-medium text-base leading-6">
             Sign up
           </button>
         </div>
