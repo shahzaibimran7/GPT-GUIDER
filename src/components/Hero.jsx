@@ -3,7 +3,7 @@ import HeriIcon from "../assets/hero-image.svg";
 import Avatars from "../assets/avatars.svg";
 const Hero = () => {
   return (
-    <section className="xl:pt-[120px] lg:pt-[100px] flex justify-between xl:pb-18 lg:pb-16">
+    <section className="xl:pt-[120px] lg:pt-[100px] flex justify-between ">
       <div className="flex flex-col">
         <h1 className="text-white text-4xl font-poppins font-bold xl:leading-[44px] lg:leading-[36px]">
           Save Your Time <span className="text-[#2CB49F]">&</span> Study Faster

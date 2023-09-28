@@ -1,5 +1,8 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import BrowsingPlugin from "./components/BrowsingPlugin";
+import GptProf from "./components/GptProf";
+import DocumentOCR from "./components/DocumentOCR";
 
 // const CornerDivs = () => {
 //   return (
@@ -33,9 +36,12 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="relative bg-[#07091E] min-h-screen w-screen pt-6 xl:px-[140px] lg:px-[100px]">
+    <div className="relative bg-[#07091E] min-h-screen min-w-screen pt-6 xl:px-[140px] lg:px-[100px]">
       <Navbar />
       <Hero />
+      <BrowsingPlugin />
+      <GptProf />
+      <DocumentOCR />
       {/* <CornerDivs /> */}
     </div>
   );
