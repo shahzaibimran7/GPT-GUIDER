@@ -3,6 +3,11 @@ import Navbar from "./components/Navbar";
 import BrowsingPlugin from "./components/BrowsingPlugin";
 import GptProf from "./components/GptProf";
 import DocumentOCR from "./components/DocumentOCR";
+import ChatPdf from "./components/ChatPdf";
+import Transcription from "./components/Transcription";
+import DGPlugin from "./components/DGPlugin";
+import YTTranscription from "./components/YTTranscription";
+import QnA from "./components/QnA";
 
 // const CornerDivs = () => {
 //   return (
@@ -42,6 +47,11 @@ function App() {
       <BrowsingPlugin />
       <GptProf />
       <DocumentOCR />
+      <ChatPdf />
+      <Transcription />
+      <DGPlugin />
+      <YTTranscription />
+      <QnA />
       {/* <CornerDivs /> */}
     </div>
   );
