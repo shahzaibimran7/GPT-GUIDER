@@ -1,14 +1,14 @@
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import BrowsingPlugin from "./components/BrowsingPlugin";
-import GptProf from "./components/GptProf";
-import DocumentOCR from "./components/DocumentOCR";
-import ChatPdf from "./components/ChatPdf";
-import Transcription from "./components/Transcription";
-import DGPlugin from "./components/DGPlugin";
-import YTTranscription from "./components/YTTranscription";
-import QnA from "./components/QnA";
-import Footer from "./components/Footer";
+import Hero from './components/Hero'
+import Navbar from './components/Navbar'
+import BrowsingPlugin from './components/BrowsingPlugin'
+import GptProf from './components/GptProf'
+import DocumentOCR from './components/DocumentOCR'
+import ChatPdf from './components/ChatPdf'
+import Transcription from './components/Transcription'
+import DGPlugin from './components/DGPlugin'
+import YTTranscription from './components/YTTranscription'
+import QnA from './components/QnA'
+import Footer from './components/Footer'
 
 // const CornerDivs = () => {
 //   return (
@@ -56,7 +56,7 @@ function App() {
       <Footer />
       {/* <CornerDivs /> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
