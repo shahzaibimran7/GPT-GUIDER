@@ -9,6 +9,7 @@ import DGPlugin from './components/DGPlugin'
 import YTTranscription from './components/YTTranscription'
 import QnA from './components/QnA'
 import Footer from './components/Footer'
+import Feature from './Pages/Feature'
 
 // const CornerDivs = () => {
 //   return (
@@ -45,6 +46,7 @@ function App() {
     <div className="relative bg-[#07091E] min-h-screen min-w-screen pt-6 xl:px-[140px] lg:px-[100px]">
       <Navbar />
       <Hero />
+      <Feature />
       <BrowsingPlugin />
       <GptProf />
       <DocumentOCR />

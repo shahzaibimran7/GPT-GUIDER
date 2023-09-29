@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../components/Card'
-import icon1 from '../Assets/CardsLogo/ion_play.svg'
+// import icon1 from '../Assets/CardsLogo/ion_play.svg'
 const Feature = () => {
   return (
     <div className="container mx-auto py-8">
@@ -25,7 +25,7 @@ const Feature = () => {
           <Card title="Document OCR AI" icon="icon" description="Convert scanned and handwritten PDFs into digital formats." />
         </div>
         <div className="m-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
-          <Card title="Audio Transcription" icon={icon1} description="Upload an audio/MP4 file and get the transcribed text with a summary." />
+          <Card title="Audio Transcription" icon="icon1" description="Upload an audio/MP4 file and get the transcribed text with a summary." />
         </div>
         <div className="m-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
           <Card title="Video Summarization" icon="icon" description="Upload a video and get the transcribed text with a summary." />
