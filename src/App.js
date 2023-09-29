@@ -8,6 +8,7 @@ import Transcription from "./components/Transcription";
 import DGPlugin from "./components/DGPlugin";
 import YTTranscription from "./components/YTTranscription";
 import QnA from "./components/QnA";
+import Footer from "./components/Footer";
 
 // const CornerDivs = () => {
 //   return (
@@ -52,6 +53,7 @@ function App() {
       <DGPlugin />
       <YTTranscription />
       <QnA />
+      <Footer />
       {/* <CornerDivs /> */}
     </div>
   );
