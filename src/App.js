@@ -43,7 +43,7 @@ import Feature from "./Pages/Feature";
 
 function App() {
   return (
-    <div className="relative bg-[#07091E] min-h-screen min-w-screen pt-6 xl:px-[140px] lg:px-[100px]">
+    <div className="relative bg-[#07091E] min-h-screen min-w-screen pt-6 xl:px-[140px] lg:px-[90px]">
       <Navbar />
       <Hero />
       <Feature />

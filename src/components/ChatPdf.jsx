@@ -5,12 +5,12 @@ const ChatPdf = (props) => {
   return (
     <div className="flex xl:mt-18 lg:mt-16 w-full gap-20">
       <div className="flex flex-col mt-7">
-        <h1 className="text-white font-poppins text-4xl font-bold leading-[48px] mb-6">
+        <h1 className="text-white font-poppins text-4xl font-bold leading-[48px] mb-6 whitespace-nowrap">
           Chat With PDF
         </h1>
         <ul>
           <div className="flex gap-3 mb-6">
-            <img src={Ellipse} alt="" className="mb-[60px]" />
+            <img src={Ellipse} alt="" className="xl:mb-[56px] lg:mb-36" />
             <div className="flex flex-col">
               <li className=" text-white font-poppins text-lg font-medium leading-7">
                 Education:{" "}
@@ -22,7 +22,7 @@ const ChatPdf = (props) => {
             </div>
           </div>
           <div className="flex gap-3 mb-6">
-            <img src={Ellipse} alt="" className="mb-[60px]" />
+            <img src={Ellipse} alt="" className="xl:mb-[56px] lg:mb-28" />
             <div className="flex flex-col">
               <li className=" text-white font-poppins text-lg font-medium leading-7">
                 Research:{" "}
@@ -34,7 +34,7 @@ const ChatPdf = (props) => {
             </div>
           </div>
           <div className="flex gap-3 mb-6">
-            <img src={Ellipse} alt="" className="mb-[60px]" />
+            <img src={Ellipse} alt="" className="xl:mb-[56px] lg:mb-28" />
             <div className="flex flex-col">
               <li className=" text-white font-poppins text-lg font-medium leading-7">
                 Any language:{" "}
@@ -46,18 +46,18 @@ const ChatPdf = (props) => {
             </div>
           </div>
           <div className="flex gap-3 mb-6">
-            <img src={Ellipse} alt="" className="mb-[60px]" />
+            <img src={Ellipse} alt="" className="xl:mb-10 lg:mb-20" />
             <div className="flex flex-col">
-              <li className=" text-white font-poppins text-lg font-medium leading-7">
+              <li className=" text-white font-poppins text-lg font-medium leading-7 ">
                 Sources included:{" "}
               </li>
-              <h1 className="text-white font-poppins text-lg font-normal leading-7">
+              <h1 className="text-white font-poppins text-lg font-normal leading-7 xl:mb-3">
                 Every answer will include the sources of the relevant pages.
               </h1>
             </div>
           </div>
           <div className="flex gap-3 mb-6">
-            <img src={Ellipse} alt="" className="mb-[60px]" />
+            <img src={Ellipse} alt="" className="xl:mb-[56px] lg:mb-28" />
             <div className="flex flex-col">
               <li className=" text-white font-poppins text-lg font-medium leading-7">
                 Simple and Secure:{" "}
@@ -69,7 +69,7 @@ const ChatPdf = (props) => {
             </div>
           </div>
           <div className="flex gap-3 mb-6">
-            <img src={Ellipse} alt="" className="mb-28" />
+            <img src={Ellipse} alt="" className="xl:mb-32 lg:mb-72" />
             <div className="flex flex-col">
               <li className=" text-white font-poppins text-lg font-medium leading-7">
                 OCR Feature: save your time and effort{" "}

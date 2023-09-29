@@ -14,7 +14,7 @@ const YTTranscription = (props) => {
 
         <ul>
           <div className="lg:flex lg:gap-3 lg:mb-6">
-            <img src={Ellipse} alt="" />
+            <img src={Ellipse} alt="" className="lg:mb-20 xl:mt-2" />
             <li className="text-white font-poppins text-lg font-medium leading-7">
               Transcribe and summarize you tube videos just by provide URL of
               video.{" "}
@@ -22,7 +22,7 @@ const YTTranscription = (props) => {
           </div>
 
           <div className="lg:flex lg:gap-3 lg:mb-6">
-            <img src={Ellipse} alt="" />
+            <img src={Ellipse} alt="" className="lg:mb-32 xl:mt-2" />
             <li className="text-white font-poppins text-lg font-medium leading-7">
               Save your time and effort and say good bye to manual transcription
               and time-consuming video content analysis.{" "}

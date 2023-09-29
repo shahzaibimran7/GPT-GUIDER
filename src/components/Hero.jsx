@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
         <div className="flex pt-[142px]">
           <img src={Avatars} alt="" />
-          <h1 className="text-white text-lg font-poppins font-semibold leading-[26px] ml-3 mt-1">
+          <h1 className="text-white text-lg font-poppins font-semibold leading-[26px] ml-3 mt-1 whitespace-nowrap">
             Trusted by more than 100K{" "}
             <span className="text-[#2CB49F]">users</span>
           </h1>

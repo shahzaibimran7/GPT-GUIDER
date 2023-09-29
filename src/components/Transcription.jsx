@@ -4,7 +4,7 @@ import Ellipse from "../assets/Ellipse.svg";
 
 const Transcription = (props) => {
   return (
-    <div className="flex xl:mt-18 lg:mt-16 w-full gap-20">
+    <div className="flex xl:mt-18 lg:mt-16 w-full xl:gap-20 lg:gap-10">
       <img src={TranscriptionPic} alt="" />
 
       <div className="flex flex-col mt-[200px]">
@@ -14,7 +14,7 @@ const Transcription = (props) => {
 
         <ul>
           <div className="lg:flex lg:gap-3 lg:mb-6">
-            <img src={Ellipse} alt="" />
+            <img src={Ellipse} alt="" className="lg:mb-20 xl:mt-2" />
             <li className="text-white font-poppins text-lg font-medium leading-7">
               upload an audio or Mp4 file and get the transcribed text with a
               summary.{" "}
@@ -22,7 +22,7 @@ const Transcription = (props) => {
           </div>
 
           <div className="lg:flex lg:gap-3 lg:mb-6">
-            <img src={Ellipse} alt="" />
+            <img src={Ellipse} alt="" className="lg:mb-12 xl:mt-2" />
             <li className="text-white font-poppins text-lg font-medium leading-7">
               Upload a video and get the transcribed text with a summary.{" "}
             </li>

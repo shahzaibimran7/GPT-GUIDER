@@ -3,14 +3,14 @@ import DGPluginPic from "../assets/dg-plugin.svg";
 import Ellipse from "../assets/Ellipse.svg";
 const DGPlugin = (props) => {
   return (
-    <div className="flex xl:mt-18 lg:mt-16 w-full gap-20">
+    <div className="flex xl:mt-18 lg:mt-16 w-full xl:gap-20 lg:gap-10">
       <div className="flex flex-col mt-7">
-        <h1 className="text-white font-poppins text-4xl font-bold leading-[48px] mb-6">
+        <h1 className="text-white font-poppins text-4xl font-bold leading-[48px] mb-6 whitespace-nowrap">
           Diagram plugin{" "}
         </h1>
         <ul>
           <div className="flex gap-3 mb-6">
-            <img src={Ellipse} alt="" className="mb-[60px]" />
+            <img src={Ellipse} alt="" className="xl:mb-[60px] lg:mb-28" />
             <div className="flex flex-col">
               <li className=" text-white font-poppins text-lg font-medium leading-7">
                 Enhanced Understanding:{" "}
@@ -22,7 +22,7 @@ const DGPlugin = (props) => {
             </div>
           </div>
           <div className="flex gap-3 mb-6">
-            <img src={Ellipse} alt="" className="mb-[60px]" />
+            <img src={Ellipse} alt="" className="xl:mb-20 lg:mb-36" />
             <div className="flex flex-col">
               <li className=" text-white font-poppins text-lg font-medium leading-7">
                 Efficient Study:{" "}
@@ -35,7 +35,7 @@ const DGPlugin = (props) => {
             </div>
           </div>
           <div className="flex gap-3 mb-6">
-            <img src={Ellipse} alt="" className="mb-[60px]" />
+            <img src={Ellipse} alt="" className="xl:mb-20 lg:mb-40" />
             <div className="flex flex-col">
               <li className=" text-white font-poppins text-lg font-medium leading-7">
                 Memory Retention:{" "}
