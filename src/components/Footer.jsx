@@ -1,5 +1,8 @@
 import React from "react";
 import Twitter from "../Assets/twitter.svg";
+import Facebook from "../Assets/facebook.svg";
+import LinkedIn from "../Assets/Linkedin.svg";
+
 const Footer = () => {
   return (
     <div className="flex flex-col pb-24">
@@ -11,7 +14,7 @@ const Footer = () => {
           <span className="text-[#00B6BD] text-shadow-custom text-shadow-lg">
             GPT
           </span>{" "}
-          <span className="text-shadow-custom text-shadow-lg">GUIDER</span>
+          <span className="text-shadow-custom text-shadow-lg">Guider</span>
         </a>{" "}
         <div className="flex flex-col">
           <h1 className="text-lg font-poppins font-bold leading-7 text-white ">
@@ -64,8 +67,8 @@ const Footer = () => {
           </h1>
           <div className="flex gap-3 mt-6">
             <img src={Twitter} alt="" />
-            <img src={Twitter} alt="" />
-            <img src={Twitter} alt="" />
+            <img src={Facebook} alt="" />
+            <img src={LinkedIn} alt="" />
           </div>
         </div>
       </footer>
