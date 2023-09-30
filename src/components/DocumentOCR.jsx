@@ -1,6 +1,6 @@
 import React from "react";
-import DocumentOCRPic from "../assets/document-ocr.svg";
-import Ellipse from "../assets/Ellipse.svg";
+import DocumentOCRPic from "../Assets/document-ocr.svg";
+import Ellipse from "../Assets/Ellipse.svg";
 const DocumentOCR = (props) => {
   return (
     <div className="flex xl:mt-18 lg:mt-16 w-full xl:gap-20 lg:gap-0">

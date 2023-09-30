@@ -1,6 +1,6 @@
 import React from "react";
-import QnAPic from "../assets/qna.svg";
-import Ellipse from "../assets/Ellipse.svg";
+import QnAPic from "../Assets/qna.svg";
+import Ellipse from "../Assets/Ellipse.svg";
 
 const QnA = (props) => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Twitter from "../assets/twitter.svg";
+import Twitter from "../Assets/twitter.svg";
 const Footer = () => {
   return (
     <div className="flex flex-col pb-24">

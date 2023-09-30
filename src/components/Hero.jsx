@@ -1,16 +1,21 @@
 import React from "react";
-import HeriIcon from "../assets/hero-image.svg";
-import Avatars from "../assets/avatars.svg";
+import HeriIcon from "../Assets/hero-image.svg";
+import Avatars from "../Assets/avatars.svg";
+import Ellipse from "../Assets/Ellipse.png";
+import EllipseTopLeft from "../Assets/EllipseLeftTop.png";
+import '../App.css'
 const Hero = () => {
   return (
-    <section className="xl:pt-[120px] lg:pt-[100px] flex justify-between ">
+    <section className="xl:pt-[120px] lg:pt-[100px] flex justify-between hero-container ellipse-container">
+<img src={Ellipse} alt="" className="ellipse"/>
+<img src={EllipseTopLeft} alt="" className="ellipseTopLeft"/>
       <div className="flex flex-col">
         <h1 className="text-white text-4xl font-poppins font-bold xl:leading-[44px] lg:leading-[36px]">
           Save Your Time <span className="text-[#2CB49F]">&</span> Study Faster
         </h1>
         <h1 className="text-white text-[22px] font-poppins font-normal leading-[30px] pt-5">
-          Increase your productivity, Elevate your learning with the most
-          comprehensive and Powerful AI tools.
+          Increase your productivity, Elevate your learning<br></br> with the most
+          comprehensive and<br></br> Powerful AI tools.
         </h1>
 
         <div className="xl:pt-12 lg:pt-10">

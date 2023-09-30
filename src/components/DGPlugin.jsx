@@ -1,6 +1,6 @@
 import React from "react";
-import DGPluginPic from "../assets/dg-plugin.svg";
-import Ellipse from "../assets/Ellipse.svg";
+import DGPluginPic from "../Assets/dg-plugin.svg";
+import Ellipse from "../Assets/Ellipse.svg";
 const DGPlugin = (props) => {
   return (
     <div className="flex xl:mt-18 lg:mt-16 w-full xl:gap-20 lg:gap-10">

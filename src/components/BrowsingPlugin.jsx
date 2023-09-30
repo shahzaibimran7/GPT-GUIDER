@@ -1,6 +1,6 @@
 import React from "react";
-import BrowsingPluginPic from "../assets/browsing-plugin.svg";
-import Ellipse from "../assets/Ellipse.svg";
+import BrowsingPluginPic from "../Assets/browsing-plugin.svg";
+import Ellipse from "../Assets/Ellipse.svg";
 
 const BrowsingPlugin = (props) => {
   return (

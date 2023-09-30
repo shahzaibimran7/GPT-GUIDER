@@ -1,14 +1,14 @@
 import React from "react";
 import Card from "../components/Card";
-import icon1 from "../assets/CardsLogo/search icon.svg";
-import GptProfIcon from "../assets/CardsLogo/gpt-prof.svg";
-import ChatPdfIcon from "../assets/CardsLogo/pdf icon.svg";
-import YouTubeIcon from "../assets/CardsLogo/youtube.svg";
-import DgPluginIcon from "../assets/CardsLogo/diagram-icon.svg";
-import DocumentIcon from "../assets/CardsLogo/document-ocr.svg";
-import AudioIcon from "../assets/CardsLogo/Group.svg";
-import VideoIcon from "../assets/CardsLogo/video-summarization.svg";
-import QnAIcon from "../assets/CardsLogo/qna.svg";
+import icon1 from "../Assets/CardsLogo/search icon.svg";
+import GptProfIcon from "../Assets/CardsLogo/gpt-prof.svg";
+import ChatPdfIcon from "../Assets/CardsLogo/pdf icon.svg";
+import YouTubeIcon from "../Assets/CardsLogo/youtube.svg";
+import DgPluginIcon from "../Assets/CardsLogo/diagram-icon.svg";
+import DocumentIcon from "../Assets/CardsLogo/document-ocr.svg";
+import AudioIcon from "../Assets/CardsLogo/Group.svg";
+import VideoIcon from "../Assets/CardsLogo/video-summarization.svg";
+import QnAIcon from "../Assets/CardsLogo/qna.svg";
 
 const Feature = () => {
   return (

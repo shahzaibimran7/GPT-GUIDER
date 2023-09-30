@@ -1,6 +1,6 @@
 import React from "react";
-import GptProfPic from "../assets/gpt-prof.svg";
-import Ellipse from "../assets/Ellipse.svg";
+import GptProfPic from "../Assets/gpt-prof.svg";
+import Ellipse from "../Assets/Ellipse.svg";
 const GptProf = (props) => {
   return (
     <div className="flex xl:mt-18 lg:mt-16 w-full xl:gap-20 lg:gap-10">
