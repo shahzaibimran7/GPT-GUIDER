@@ -1,8 +1,8 @@
 import React from "react";
 import HeriIcon from "../Assets/hero-image.svg";
 import Avatars from "../Assets/avatars.svg";
-import Ellipse from "../Assets/Ellipse.png";
-import EllipseTopLeft from "../Assets/EllipseLeftTop.png";
+import Ellipse from "../Assets/img2.svg";
+import EllipseTopLeft from "../Assets/img1.svg";
 import '../App.css'
 const Hero = () => {
   return (
