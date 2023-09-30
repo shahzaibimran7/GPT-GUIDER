@@ -6,6 +6,8 @@ import EllipseTopLeft from "../Assets/img1.svg";
 import '../App.css'
 const Hero = () => {
   return (
+    <div>
+
     <section className="xl:pt-[120px] lg:pt-[100px] flex justify-between hero-container ellipse-container">
 <img src={Ellipse} alt="" className="ellipse"/>
 <img src={EllipseTopLeft} alt="" className="ellipseTopLeft"/>
@@ -31,8 +33,12 @@ const Hero = () => {
           </h1>
         </div>
       </div>
+      <div className="flex">
       <img src={HeriIcon} alt="" />
+      </div>
     </section>
+      <div class="circle circleThree rounded-full"></div>
+    </div>
   );
 };
 

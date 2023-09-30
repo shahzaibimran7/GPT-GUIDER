@@ -22,6 +22,28 @@
   top: 0px;
   left: 0px;
 }
+/* .ellipseBottom {
+  position: absolute;
+  top: 640px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ellipseBottom2 {
+  position: absolute;
+  top: 860px;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+.circleThree {
+  width: 450px;
+  height: 30px;
+margin-top: 40px;
+  margin-left: 30%;
+  border-radius: 382px;
+  background: #3A1078;
+  filter: blur(60px);
+  bottom: -100px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

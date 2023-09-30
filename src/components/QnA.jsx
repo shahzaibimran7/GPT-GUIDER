@@ -4,7 +4,7 @@ import Ellipse from "../Assets/Ellipse.svg";
 
 const QnA = (props) => {
   return (
-    <div className="flex xl:mt-18 lg:mt-16 w-full xl:gap-20 lg:gap-10">
+    <div className="flex xl:mt-18 lg:mt-16 lg:mb-28 w-full xl:gap-20 lg:gap-10">
       <div className="flex flex-col xl:mt-[200px] lg:mt-[120px]">
         <h1 className="text-white font-poppins text-4xl font-bold leading-[48px] mb-6 whitespace-nowrap">
           Questions & Answers Generator{" "}
