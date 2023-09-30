@@ -4,7 +4,7 @@ import Ellipse from "../Assets/Ellipse.svg";
 
 const Transcription = (props) => {
   return (
-    <div className="flex xl:mt-18 lg:mt-16 w-full xl:gap-20 lg:gap-10">
+    <div className="flex xl:mt-20 lg:mt-16 w-full xl:gap-20 lg:gap-10">
       <img src={TranscriptionPic} alt="" />
 
       <div className="flex flex-col mt-[200px]">

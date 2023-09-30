@@ -3,7 +3,7 @@ import DGPluginPic from "../Assets/dg-plugin.svg";
 import Ellipse from "../Assets/Ellipse.svg";
 const DGPlugin = (props) => {
   return (
-    <div className="flex xl:mt-18 lg:mt-16 w-full xl:gap-20 lg:gap-10">
+    <div className="flex xl:mt-20 lg:mt-16 w-full xl:gap-20 lg:gap-10">
       <div className="flex flex-col mt-7">
         <h1 className="text-white font-poppins text-4xl font-bold leading-[48px] mb-6 whitespace-nowrap">
           Diagram plugin{" "}

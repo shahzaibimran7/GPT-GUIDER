@@ -3,7 +3,7 @@ import ChatPdfPic from "../Assets/chat-pdf.svg";
 import Ellipse from "../Assets/Ellipse.svg";
 const ChatPdf = (props) => {
   return (
-    <div className="flex xl:mt-18 lg:mt-16 w-full gap-20">
+    <div className="flex xl:mt-20 lg:mt-16 w-full gap-20">
       <div className="flex flex-col mt-7">
         <h1 className="text-white font-poppins text-4xl font-bold leading-[48px] mb-6 whitespace-nowrap">
           Chat With PDF

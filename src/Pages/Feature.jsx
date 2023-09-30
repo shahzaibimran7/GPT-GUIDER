@@ -13,10 +13,10 @@ import QnAIcon from "../Assets/CardsLogo/qna.svg";
 const Feature = () => {
   return (
     <div className="">
-      <h1 className="text-center text-white font-poppins font-bold lg:mt-12 text-4xl md:text-3xl lg:text-4xl py-[120px]">
+      <h1 className="text-center text-white font-poppins font-bold lg:mt-12 xl:mt-20 text-4xl md:text-3xl lg:text-4xl py-[120px]">
         Features
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:mt-8 lg:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-8 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:mt-8 xl:mt-12 lg:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-8 justify-items-center">
         <div className="m-4">
           <Card
             title="Browsing Plugin"

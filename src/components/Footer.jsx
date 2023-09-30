@@ -6,7 +6,7 @@ import LinkedIn from "../Assets/Linkedin.svg";
 const Footer = () => {
   return (
     <div className="flex flex-col pb-24">
-      <footer className="flex justify-between xl:mt-18 lg:mt-16 w-full">
+      <footer className="flex justify-between xl:mt-24 lg:mt-16 w-full">
         <a
           href="/"
           className="text-white text-center font-poppins font-semibold text-2xl leading-[32px] pt-2"

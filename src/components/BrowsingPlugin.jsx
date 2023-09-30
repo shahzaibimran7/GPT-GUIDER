@@ -4,7 +4,7 @@ import Ellipse from "../Assets/Ellipse.svg";
 
 const BrowsingPlugin = (props) => {
   return (
-    <div className="flex xl:mt-18 lg:mt-32 w-full xl:gap-20 lg:gap-10">
+    <div className="flex xl:mt-18 lg:mt-32 xl:mt-52 w-full xl:gap-20 lg:gap-10">
       <img src={BrowsingPluginPic} alt="" />
 
       <div className="flex flex-col mt-[200px]">
