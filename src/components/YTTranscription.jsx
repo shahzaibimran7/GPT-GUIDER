@@ -1,6 +1,6 @@
 import React from "react";
-import YTTranscriptionPic from "../assets/yt-transcription.svg";
-import Ellipse from "../assets/Ellipse.svg";
+import YTTranscriptionPic from "../Assets/yt-transcription.svg";
+import Ellipse from "../Assets/Ellipse.svg";
 
 const YTTranscription = (props) => {
   return (

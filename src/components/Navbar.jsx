@@ -11,9 +11,9 @@ const Navbar = () => {
           <span className="text-[#00B6BD] text-shadow-custom text-shadow-lg">
             GPT
           </span>{" "}
-          <span className="text-shadow-custom text-shadow-lg">GUIDER</span>
+          <span className="text-shadow-custom text-shadow-lg">Guider</span>
         </a>
-        <div className="lg:flex space-x-4 pt-4">
+        <div className="lg:flex space-x-4">
           <a
             href="/"
             className="text-white text-center font-poppins font-medium text-base leading-[24px]"

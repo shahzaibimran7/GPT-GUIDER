@@ -1,6 +1,6 @@
 import React from "react";
-import ChatPdfPic from "../assets/chat-pdf.svg";
-import Ellipse from "../assets/Ellipse.svg";
+import ChatPdfPic from "../Assets/chat-pdf.svg";
+import Ellipse from "../Assets/Ellipse.svg";
 const ChatPdf = (props) => {
   return (
     <div className="flex xl:mt-18 lg:mt-16 w-full gap-20">

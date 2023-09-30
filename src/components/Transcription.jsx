@@ -1,6 +1,6 @@
 import React from "react";
-import TranscriptionPic from "../assets/transcription.svg";
-import Ellipse from "../assets/Ellipse.svg";
+import TranscriptionPic from "../Assets/transcription.svg";
+import Ellipse from "../Assets/Ellipse.svg";
 
 const Transcription = (props) => {
   return (
