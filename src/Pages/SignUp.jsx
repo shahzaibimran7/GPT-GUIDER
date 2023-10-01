@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import {createUserWithEmailAndPassword} from 'firebase/auth'
-import {useNavigate} from "react-router-dom";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 import Select from "react-select";
 import { Input, Ripple, initTE } from "tw-elements";
 import { auth } from "../firebase-config";
-import { toast, ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from "react-toastify";
 
 initTE({ Input, Ripple });
 
@@ -158,7 +158,10 @@ const countryOptions = [
   { value: "rwanda", label: "Rwanda" },
   { value: "saint_kitts_and_nevis", label: "Saint Kitts and Nevis" },
   { value: "saint_lucia", label: "Saint Lucia" },
-  { value: "saint_vincent_and_the_grenadines", label: "Saint Vincent and the Grenadines" },
+  {
+    value: "saint_vincent_and_the_grenadines",
+    label: "Saint Vincent and the Grenadines",
+  },
   { value: "samoa", label: "Samoa" },
   { value: "san_marino", label: "San Marino" },
   { value: "sao_tome_and_principe", label: "Sao Tome and Principe" },
@@ -209,19 +212,17 @@ const countryOptions = [
   { value: "zimbabwe", label: "Zimbabwe" },
 ];
 
-
 const SignUp = () => {
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate()
-
+  const navigate = useNavigate();
 
   const handleCountryChange = (selectedOption) => {
     setSelectedCountry(selectedOption);
   };
 
-  const handleSignup = async() => {
+  const handleSignup = async () => {
     if (!selectedCountry) {
       toast.error("Please select your country.");
     } else if (selectedCountry.value !== "egypt") {
@@ -229,18 +230,13 @@ const SignUp = () => {
     } else if (!email.trim() || !password.trim()) {
       toast.error("Please fill in all the fields.");
     }
-    try{
-      
-      const user = await createUserWithEmailAndPassword(
-        auth,
-        email,
-        password)
-        toast.success("Signup successful!");
-        navigate('/')
-      } catch (err) {
-        toast.error(err.message);
+    try {
+      const user = await createUserWithEmailAndPassword(auth, email, password);
+      toast.success("Signup successful!");
+      navigate("/");
+    } catch (err) {
+      toast.error(err.message);
     }
-
   };
 
   return (
@@ -298,7 +294,7 @@ const SignUp = () => {
                 />
                 <label
                   htmlFor="email"
-                  className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[1.7rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none peer-focus:text-white dark:text-black dark:peer-focus:text-primary"
+                  className="pointer-events-none absolute left-0 top-0 mb-0 max-w-[90%] origin-[0_0] -translate-y-[2rem] truncate pt-[0.37rem] leading-[2.15] text-white transition-all duration-200 ease-out peer-focus:-translate-y-[1.7rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none peer-focus:text-white dark:text-white dark:peer-focus:text-primary"
                 >
                   Email address
                 </label>
@@ -316,7 +312,7 @@ const SignUp = () => {
                 />
                 <label
                   htmlFor="password"
-                  className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[1.7rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none peer-focus:text-white dark:text-black dark:peer-focus:text-primary"
+                  className="pointer-events-none absolute left-0 top-0 mb-0 max-w-[90%] origin-[0_0] -translate-y-[2rem] truncate pt-[0.37rem] leading-[2.15] text-white transition-all duration-200 ease-out peer-focus:-translate-y-[1.7rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none peer-focus:text-white dark:text-white dark:peer-focus:text-primary"
                 >
                   Password
                 </label>
