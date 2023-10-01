@@ -8,3 +8,21 @@
 .custom-border {
   border: 2px solid var(--blue, #642cb6);
 }
+.text-custom {
+  background: linear-gradient(148deg, #2cb49f -24.15%, #39f29b 84.3%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-custom-2 {
+  background: linear-gradient(164deg, #00b6bd 41.09%, #acffad 78.94%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-custom-3 {
+  background: linear-gradient(161deg, #00b6bd -7.71%, #acffad 91.17%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

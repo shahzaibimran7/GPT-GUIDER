@@ -25,7 +25,7 @@ const Navbar = () => {
           to="/"
           className="text-white text-center font-poppins font-semibold text-2xl leading-[32px] pt-2"
         >
-          <span className="text-[#00B6BD] text-shadow-custom text-shadow-lg">
+          <span className="text-custom-3 text-shadow-custom text-shadow-lg">
             GPT
           </span>{" "}
           <span className="text-shadow-custom text-shadow-lg">Guider</span>
