@@ -1,10 +1,30 @@
-import React from 'react';
+import React,{useState} from 'react';
+import { toast } from 'react-toastify';
 import { Input, Ripple, initTE } from 'tw-elements';
+import {useNavigate} from "react-router-dom";
+
+import { auth } from '../firebase-config';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 
 // Initialize TW Elements
 initTE({ Input, Ripple });
-
 function SignIn() {
+  const navigate = useNavigate()
+  const [registerEmail,setRegisterEmail] = useState('')
+  const [registerPassword,setRegisterPassword] = useState('')
+  const handleSignIn = async() => {
+    try{
+    const user = await signInWithEmailAndPassword(
+      auth,
+      registerEmail,
+      registerPassword)
+      toast.success("Signup successful!");
+      navigate('/')
+    } catch (err) {
+      toast.error(err.message);
+  }
+
+  };
   return (
     <section className="h-screen">
       <div className="h-full">
@@ -92,6 +112,7 @@ function SignIn() {
                   className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                   id="exampleFormControlInput2"
                   placeholder="Email address"
+                  onChange={(e)=> setRegisterEmail(e.target.value)}
                 />
                 <label
                   htmlFor="exampleFormControlInput2"
@@ -108,6 +129,7 @@ function SignIn() {
                   className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                   id="exampleFormControlInput22"
                   placeholder="Password"
+                  onChange={(e)=> setRegisterPassword(e.target.value)}
                 />
                 <label
                   htmlFor="exampleFormControlInput22"
@@ -142,6 +164,7 @@ function SignIn() {
               <div className="text-center lg:text-left">
                 <button
                   type="button"
+                  onClick={handleSignIn}
                   className="inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                 >
                   Login
@@ -152,7 +175,7 @@ function SignIn() {
               <div className="mt-6 text-center">
                 <p>
                   Don't have an account?{' '}
-                  <a href="#!" className="text-primary">
+                  <a href="#!"  className="text-primary">
                     Sign Up
                   </a>
                 </p>

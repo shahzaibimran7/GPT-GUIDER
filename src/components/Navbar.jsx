@@ -1,6 +1,22 @@
 import React from "react";
+import { auth } from "../firebase-config";
+import { signOut } from "firebase/auth";
+import { toast } from "react-toastify";
+import {useNavigate} from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = () => { 
+  const navigate = useNavigate()
+
+  const handleSignOut = async()=>{
+    console.log("---------------------------")
+    try{
+      signOut(auth)
+      toast.success("Log Out successful!");
+      navigate('/login')
+    } catch (err) {
+      toast.error(err.message);
+  }
+  }
   return (
     <nav className="bg-[#07091E]">
       <div className="container mx-auto flex justify-between items-center">
@@ -40,12 +56,20 @@ const Navbar = () => {
           </a>
         </div>
         <div className="flex xl:gap-8 lg:gap-6">
+          {!auth.currentUser ? (
+            <>
           <button className="py-[14px] px-8 border border-[#00B6BD] rounded-[50px] text-white font-poppins font-medium text-base leading-6">
             Sign in
           </button>
           <button className="py-[14px] px-8 border bg-Green-gradient border-[#07091E] rounded-[50px] text-white font-poppins font-medium text-base leading-6">
             Sign up
           </button>
+            </>
+          ):(
+          <button onClick={handleSignOut} className="py-[14px] px-8 border bg-Green-gradient border-[#07091E] rounded-[50px] text-white font-poppins font-medium text-base leading-6">
+           Log out
+          </button>
+          )}
         </div>
       </div>
     </nav>
