@@ -1,25 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="bg-[#07091E]">
       <div className="container mx-auto flex justify-between items-center">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="text-white text-center font-poppins font-semibold text-2xl leading-[32px] pt-2"
         >
           <span className="text-[#00B6BD] text-shadow-custom text-shadow-lg">
             GPT
           </span>{" "}
           <span className="text-shadow-custom text-shadow-lg">Guider</span>
-        </a>
+        </Link>
         <div className="lg:flex space-x-4">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="text-white text-center font-poppins font-medium text-base leading-[24px]"
           >
             Home
-          </a>
+          </Link>
           <a
             href="/"
             className="text-white text-center font-poppins font-medium text-base leading-[24px]"
@@ -40,12 +41,16 @@ const Navbar = () => {
           </a>
         </div>
         <div className="flex xl:gap-8 lg:gap-6">
-          <button className="py-[14px] px-8 border border-[#00B6BD] rounded-[50px] text-white font-poppins font-medium text-base leading-6">
-            Sign in
-          </button>
-          <button className="py-[14px] px-8 border bg-Green-gradient border-[#07091E] rounded-[50px] text-white font-poppins font-medium text-base leading-6">
-            Sign up
-          </button>
+          <Link to="/login">
+            <button className="py-[14px] z-50 absolute xl:top-6 lg:top-4 xl:right-60 lg:right-44 px-8 border border-[#00B6BD] rounded-[50px] text-white font-poppins font-medium text-base leading-6">
+              Sign in
+            </button>
+          </Link>
+          <Link to="/signup">
+            <button className="py-[14px] absolute z-50 xl:right-24 lg:right-12 lg:top-4 xl:top-6 px-8 border bg-Green-gradient border-[#07091E] rounded-[50px] text-white font-poppins font-medium text-base leading-6">
+              Sign up
+            </button>
+          </Link>
         </div>
       </div>
     </nav>

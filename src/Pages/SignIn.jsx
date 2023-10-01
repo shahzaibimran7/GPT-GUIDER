@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Input, Ripple, initTE } from "tw-elements";
 
 // Initialize TW Elements
@@ -148,13 +149,12 @@ function SignIn() {
                 </button>
               </div>
 
-              {/* Sign up link */}
               <div className="mt-6 text-center">
                 <p className="text-white">
                   Don't have an account?{" "}
-                  <a href="#!" className="text-primary text-[#ACFFAD]">
+                  <Link to="/signup" className="text-primary text-[#ACFFAD]">
                     Sign Up
-                  </a>
+                  </Link>
                 </p>
               </div>
             </form>
