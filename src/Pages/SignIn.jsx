@@ -1,30 +1,33 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import { Input, Ripple, initTE } from "tw-elements";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-import { auth } from '../firebase-config';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from "../firebase-config";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 
 // Initialize TW Elements
 initTE({ Input, Ripple });
 function SignIn() {
-  const navigate = useNavigate()
-  const [registerEmail,setRegisterEmail] = useState('')
-  const [registerPassword,setRegisterPassword] = useState('')
-  const handleSignIn = async() => {
-    try{
-    const user = await signInWithEmailAndPassword(
-      auth,
-      registerEmail,
-      registerPassword)
-      toast.success("Signup successful!");
-      navigate('/')
+  const navigate = useNavigate();
+  const [registerEmail, setRegisterEmail] = useState("");
+  const [registerPassword, setRegisterPassword] = useState("");
+  const handleSignIn = async () => {
+    try {
+      const user = await signInWithEmailAndPassword(
+        auth,
+        registerEmail,
+        registerPassword
+      );
+      toast.success("SignIn successful!");
+      navigate("/");
     } catch (err) {
       toast.error(err.message);
-  }
-
+    }
   };
   return (
     <section className="h-screen">
@@ -111,7 +114,7 @@ function SignIn() {
                   className="peer block min-h-[auto] outline-none bg-white text-black w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-black [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                   id="exampleFormControlInput2"
                   placeholder="Email address"
-                  onChange={(e)=> setRegisterEmail(e.target.value)}
+                  onChange={(e) => setRegisterEmail(e.target.value)}
                 />
                 <label
                   htmlFor="exampleFormControlInput2"
@@ -128,7 +131,7 @@ function SignIn() {
                   className="peer block min-h-[auto] outline-none bg-white text-black w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-black [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                   id="exampleFormControlInput22"
                   placeholder="Password"
-                  onChange={(e)=> setRegisterPassword(e.target.value)}
+                  onChange={(e) => setRegisterPassword(e.target.value)}
                 />
                 <label
                   htmlFor="exampleFormControlInput22"
