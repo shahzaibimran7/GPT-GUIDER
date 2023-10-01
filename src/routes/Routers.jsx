@@ -11,21 +11,21 @@ const Routers = () => {
 
   return (
     <Routes>
-      {currentUser ? (
+      {/* {currentUser ? ( */}
         <>
           <Route path="/" element={<Home />} />
           {/* Redirect to Home if logged in */}
-          <Route path="/login" element={<Navigate to="/" />} />
-          <Route path="/signup" element={<Navigate to="/" />} />
+          {/* <Route path="/login" element={<Navigate to="/" />} />
+          <Route path="/signup" element={<Navigate to="/" />} /> */}
         </>
-      ) : (
+      {/* ) : ( */}
         <>
           <Route path="/login" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           {/* Redirect to Login if not logged in */}
-          <Route path="/" element={<Navigate to="/login" />} />
+          {/* <Route path="/" element={<Navigate to="/login" />} /> */}
         </>
-      )}
+      {/* )} */}
     </Routes>
   );
 };

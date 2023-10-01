@@ -223,11 +223,11 @@ const SignUp = () => {
 
   const handleSignup = async() => {
     if (!selectedCountry) {
-      alert("Please select your country.");
+      toast.error("Please select your country.");
     } else if (selectedCountry.value !== "egypt") {
-      alert("You can only select Egypt as your country.");
+      toast.error("You can only select Egypt as your country.");
     } else if (!email.trim() || !password.trim()) {
-      alert("Please fill in all the fields.");
+      toast.error("Please fill in all the fields.");
     }
     try{
       
