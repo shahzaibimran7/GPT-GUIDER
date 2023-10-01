@@ -68,13 +68,13 @@ const Navbar = () => {
             <button className="py-[14px] absolute z-50 xl:right-24 lg:right-12 lg:top-4 xl:top-6 px-8 border bg-Green-gradient border-[#07091E] rounded-[50px] text-white font-poppins font-medium text-base leading-6">
               Sign up
             </button>
+          </Link>
             </>
           ):(
           <button onClick={handleSignOut} className="py-[14px] px-8 border bg-Green-gradient border-[#07091E] rounded-[50px] text-white font-poppins font-medium text-base leading-6">
            Log out
           </button>
           )}
-          </Link>
         </div>
       </div>
     </nav>
